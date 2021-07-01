@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Shorter
- * Plugin URI:        https://donohoe.dev/<project>
+ * Plugin URI:        https://github.com/donohoe/shorter
  * Description:       Basic URL shortener with Post ID
  * Version:           1.0
  * Requires at least: 4.9
