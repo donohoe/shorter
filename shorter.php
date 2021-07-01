@@ -17,12 +17,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class Shorter {
-
 	public function __construct() {
 		$this->base_path = '/s/';
 		add_filter('template_include', array( $this, 'template_include_by_url' ) );
 	}
-
 	public function template_include_by_url ( $template ) {
 		$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 		if (strpos( $uri_path, $this->base_path ) === 0){
@@ -38,7 +36,6 @@ class Shorter {
 		}
 		return $template;
 	}
-
 }
 
 function run_shorter() {
